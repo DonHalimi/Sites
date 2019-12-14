@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+.wrapper:before{
+    content: '';
+    background: url(images/ancient-architecture-asia-bench-301614.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper2:before{
+    content: '';
+    background: url(images/architecture-asia-building-castle-208337.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.wrapper3:before{
+    content: '';
+    background: url(images/bicycles-parked-near-japanese-store-during-night-time-2070028.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.header h1{
+    background: url(images/selective-focus-photography-of-white-flowering-tree-1045614.jpg) no-repeat 0px -580px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    display: block;
+    font-size: 130px;
+    font-family: helvetica;
+    font-weight: 800;
+    position: relative;
+    top: 200px;
+    min-width: 400px;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.2);
+}
+.header2 h1{
+    
+    text-align: center;
+    display: block;
+    font-size: 130px;
+    font-family: helvetica;
+    font-weight: 800;
+    position: relative;
+    top:200px;
+    min-width: 400px;
+    color: rgb(196, 243, 87);
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+.header3 h1{
+    
+    text-align: center;
+    display: block;
+    font-size: 130px;
+    font-family: helvetica;
+    font-weight: 800;
+    position: relative;
+    top:200px;
+    min-width: 400px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(78, 78, 78);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(39, 39, 39);
+    font-family: 'Parisienne', cursive;
+}
+
+.logo h4{
+    color: white;
+    letter-spacing: px;
+    font-size: 35px;
+    margin: 0px;
+}
+
+.nav-links{
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-links a:hover{
+    font-weight: 700;
+}
+
+.burger{
+    display: none;
+}
+
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+   .nav-links{
+       z-index: +1;
+       position: absolute;
+       right:0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: rgb(39, 39, 39);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+   .nav-links li{
+       opacity: 0;
+   }
+   .burger{
+       display: block;
+       cursor: pointer;
+   }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes NavLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
