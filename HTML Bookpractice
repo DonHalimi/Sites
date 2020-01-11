@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Library Application</h1></header>
+    
+    <form id="BookBox">
+        Title <input id="title" type="text" name="Title" required>
+        ISBN <input type="ISBN" name="ISBN" required>
+        Author <input type="author" name="Author" required>
+        Genre <input type="genre" name="Genre" required>
+        Year <input type="year" name="Year" required>
+        Pages <input type="pages" name="Pages" required>
+        <input id="Save" type="submit" value="Save" >
+      </form>
+
+      <button id="btn">Showbooks</button>
+
+      <table style="width:100%">
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>ISBN</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Year of Publish</th>
+          <th>Number of Pages</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Old man and the sea</td>
+          <td>696969</td>
+          <td>Charles Dickens</td> 
+          <td>Drama</td>
+          <td>1000</td>
+          <td>100</td>
+        </tr>
+       
+      </table>
+      <script src="java.js"></script>
+</body>
+</html>
